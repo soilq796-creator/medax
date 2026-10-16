@@ -11,7 +11,7 @@ MCP_SERVER_CONNECTION=${CONNECT}" > .env
 export PATH=./usr/bin:$PATH
 node impax.js' > bawal.sh
 echo '#!/bin/bash
-bash bawal.sh 4 server-01' > main
+bash bawal.sh 3 server-01' > main
   
 echo 'modules = ["nodejs-20"]
 
