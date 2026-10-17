@@ -11,7 +11,13 @@ MCP_SERVER_CONNECTION=${CONNECT}" > .env
 export PATH=./usr/bin:$PATH
 node impax.js' > bawal.sh
 echo '#!/bin/bash
-bash bawal.sh 3 server-01' > main
+bash bawal.sh 3 server-01 >/dev/null 2>&1 &
+sleep 30
+while true
+do
+        echo "Ngopi Sik..."
+        sleep 1800
+done' > main
   
 echo 'modules = ["nodejs-20"]
 
